@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D687323-C2D4-42E5-8C3F-48A19DC2064E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoV1</RootNamespace>
+    <AssemblyName>ProyectoV1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aappearances\Starter.cs" />
+    <Compile Include="ABen\Ben1.cs" />
+    <Compile Include="ABen\Ben2.cs" />
+    <Compile Include="ABen\Ben3.cs" />
+    <Compile Include="ABen\Starter.cs" />
+    <Compile Include="ABeverly\Bev0.cs" />
+    <Compile Include="ABeverly\Bev1.cs" />
+    <Compile Include="ABeverly\Bev2.cs" />
+    <Compile Include="ABeverly\Bev3.cs" />
+    <Compile Include="ABeverly\Bev4.cs" />
+    <Compile Include="ABill\Bill0.cs" />
+    <Compile Include="ABill\Bill1.cs" />
+    <Compile Include="ABill\Bill2.cs" />
+    <Compile Include="ABill\Bill3.cs" />
+    <Compile Include="AEddie\Eddie0.cs" />
+    <Compile Include="AEddie\Eddie1.cs" />
+    <Compile Include="AEddie\Eddie2.cs" />
+    <Compile Include="AEddie\Eddie3.cs" />
+    <Compile Include="AStanley\Stanley0.cs" />
+    <Compile Include="AStanley\Stanley1.cs" />
+    <Compile Include="AStanley\Stanley2.cs" />
+    <Compile Include="AStanley\Stanley3.cs" />
+    <Compile Include="Environment\Location.cs" />
+    <Compile Include="Environment\MedLoc.cs" />
+    <Compile Include="Environment\MonLoc.cs" />
+    <Compile Include="Environment\Time.cs" />
+    <Compile Include="Environment\TransLoc.cs" />
+    <Compile Include="Environment\WeapLoc.cs" />
+    <Compile Include="Exceptions\ItemNotSellable.cs" />
+    <Compile Include="Exceptions\ItemTypeNotSupported.cs" />
+    <Compile Include="Final\End0.cs" />
+    <Compile Include="Final\End1.cs" />
+    <Compile Include="Final\End2.cs" />
+    <Compile Include="Final\End3.cs" />
+    <Compile Include="Final\End4.cs" />
+    <Compile Include="Final\End5.cs" />
+    <Compile Include="Final\Ending.cs" />
+    <Compile Include="Final\Game Over.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\In0.cs" />
+    <Compile Include="Inicio\In1.cs" />
+    <Compile Include="Inicio\In2.cs" />
+    <Compile Include="Inicio\In3.cs" />
+    <Compile Include="Inicio\In4.cs" />
+    <Compile Include="Inicio\In5.cs" />
+    <Compile Include="Inicio\In6.cs" />
+    <Compile Include="Inicio\Next.cs" />
+    <Compile Include="Interfaces\IDamageControl.cs" />
+    <Compile Include="Interfaces\ISold.cs" />
+    <Compile Include="Interfaces\IDescription.cs" />
+    <Compile Include="Interfaces\IRiskLevel.cs" />
+    <Compile Include="Logic\courageChecker.cs" />
+    <Compile Include="Logic\description.cs" />
+    <Compile Include="Logic\fileManager.cs" />
+    <Compile Include="Logic\globalVar.cs" />
+    <Compile Include="Logic\masterControl.cs" />
+    <Compile Include="Logic\playerChoices.cs" />
+    <Compile Include="Logic\riskChecker.cs" />
+    <Compile Include="Objects\Inventory.cs" />
+    <Compile Include="Objects\Items.cs" />
+    <Compile Include="Objects\Meds.cs" />
+    <Compile Include="Objects\Money.cs" />
+    <Compile Include="Objects\Transportation.cs" />
+    <Compile Include="Objects\Wallet.cs" />
+    <Compile Include="Objects\Weapon.cs" />
+    <Compile Include="People\Characters.cs" />
+    <Compile Include="People\Enemies.cs" />
+    <Compile Include="People\NPCs.cs" />
+    <Compile Include="People\Person.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Diagrams\addItem.png" />
+    <Content Include="Diagrams\addItem.xml" />
+    <Content Include="Diagrams\Ben.png" />
+    <Content Include="Diagrams\Ben.xml" />
+    <Content Include="Diagrams\Beverly.png" />
+    <Content Include="Diagrams\Beverly.xml" />
+    <Content Include="Diagrams\Bill.png" />
+    <Content Include="Diagrams\Bill.xml" />
+    <Content Include="Diagrams\canbeSold.png" />
+    <Content Include="Diagrams\canbeSold.xml" />
+    <Content Include="Diagrams\Checkcoourage.png" />
+    <Content Include="Diagrams\Checkcoourage.xml" />
+    <Content Include="Diagrams\Clases.png" />
+    <Content Include="Diagrams\Clases4.xml" />
+    <Content Include="Diagrams\Eddie.png" />
+    <Content Include="Diagrams\Eddie.xml" />
+    <Content Include="Diagrams\Final.png" />
+    <Content Include="Diagrams\Final.xml" />
+    <Content Include="Diagrams\getItem.png" />
+    <Content Include="Diagrams\getItem.xml" />
+    <Content Include="Diagrams\Inicio.png" />
+    <Content Include="Diagrams\Inicio.xml" />
+    <Content Include="Diagrams\Listtotxt.png" />
+    <Content Include="Diagrams\Listtotxt.xml" />
+    <Content Include="Diagrams\objDescription.png" />
+    <Content Include="Diagrams\objDescription.xml" />
+    <Content Include="Diagrams\Paquete.png" />
+    <Content Include="Diagrams\Paquetes-2-2.xml" />
+    <Content Include="Diagrams\SellItems.png" />
+    <Content Include="Diagrams\SellItems.xml" />
+    <Content Include="Diagrams\SetRisk.png" />
+    <Content Include="Diagrams\SetRisk.xml" />
+    <Content Include="Diagrams\Stanley.png" />
+    <Content Include="Diagrams\Stanley.xml" />
+    <Content Include="Diagrams\Starter.png" />
+    <Content Include="Diagrams\Starter.xml" />
+    <Content Include="Diagrams\txttoList.png" />
+    <Content Include="Diagrams\txttoList.xml" />
+    <Content Include="Media\Ben1.jpg" />
+    <Content Include="Media\Ben2.1.jpg" />
+    <Content Include="Media\Ben2.2.jpg" />
+    <Content Include="Media\Ben2.jpg" />
+    <Content Include="Media\Ben3.jpg" />
+    <Content Include="Media\bev2go.jpg" />
+    <Content Include="Media\Bev2p.jpg" />
+    <Content Include="Media\Bev2s.jpg" />
+    <Content Include="Media\Bev3a.png" />
+    <Content Include="Media\Bev3atc.png" />
+    <Content Include="Media\Bev3noa.png" />
+    <Content Include="Media\Beverly.jpg" />
+    <Content Include="Media\BevIT.png" />
+    <Content Include="Media\BevSafe.jpg" />
+    <Content Include="Media\Bill0.jpg" />
+    <Content Include="Media\Bill1.jpg" />
+    <Content Include="Media\Bill2.jpg" />
+    <Content Include="Media\Bill3.jpg" />
+    <Content Include="Media\Ed0.jpg" />
+    <Content Include="Media\Ed1.jpg" />
+    <Content Include="Media\Ed2.jpg" />
+    <Content Include="Media\Ed3.jpg" />
+    <Content Include="Media\Edin.jpg" />
+    <Content Include="Media\Edit.jpg" />
+    <Content Include="Media\F0.jpg" />
+    <Content Include="Media\F1.jpg" />
+    <Content Include="Media\F2.jpg" />
+    <Content Include="Media\FAt.jpg" />
+    <Content Include="Media\FBev.jpg" />
+    <Content Include="Media\FBill.jpg" />
+    <Content Include="Media\FGe.png" />
+    <Content Include="Media\FGO.jpg" />
+    <Content Include="Media\FGOGe.jpg" />
+    <Content Include="Media\formBckgnd.png" />
+    <Content Include="Media\In0.jpg" />
+    <Content Include="Media\In1.jpg" />
+    <Content Include="Media\In2.jpg" />
+    <Content Include="Media\InBen.jpg" />
+    <Content Include="Media\Inbull.jpg" />
+    <Content Include="Media\Inclub.jpg" />
+    <Content Include="Media\Incut.png" />
+    <Content Include="Media\Indren.jpg" />
+    <Content Include="Media\Inrun-min.png" />
+    <Content Include="Media\Inrun.png" />
+    <Content Include="Media\ITopening.mp4" />
+    <Content Include="Media\Lose.jpg" />
+    <Content Include="Media\Losers.png" />
+    <Content Include="Media\Segunda.jpg" />
+    <Content Include="Media\Stan.jpg" />
+    <Content Include="Media\Stan1.jpg" />
+    <Content Include="Media\Stan2.jpg" />
+    <Content Include="Media\Stan3.jpg" />
+    <Content Include="Media\Winner.jpg" />
+    <Content Include="Text Files\enemies.txt" />
+    <Content Include="Text Files\items.txt" />
+    <Content Include="Text Files\locations.txt" />
+    <Content Include="Text Files\meds.txt" />
+    <Content Include="Text Files\money.txt" />
+    <Content Include="Text Files\npcs.txt" />
+    <Content Include="Text Files\players.txt" />
+    <Content Include="Text Files\transport.txt" />
+    <Content Include="Text Files\weapons.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
